@@ -12,7 +12,7 @@ import utils
 from tensorboard_logger import configure
 import os
 import sys
-from pathlib2 import Path
+from pathlib import Path
 import accuracy
 import numpy as np
 from termcolor import colored
@@ -194,12 +194,16 @@ if __name__ == '__main__':
     parser.add_argument('--test', help='Test mode? (e.g fake word2vec)', action='store_true')
     parser.add_argument('--bs', help='Batch size', type=int, default=8)
     parser.add_argument('--test_bs', help='Batch size', type=int, default=5)
-    parser.add_argument('--load_from', help='Location of a .t7 model file to load. Training will continue')
-    parser.add_argument('--expname', help='Experiment name to appear on tensorboard', default='exp1')
+    parser.add_argument('--load_from', help='Location of a .t7 model file to '
+                                            'load. Training will continue')
+    parser.add_argument('--expname', help='Experiment name to appear on '
+                                          'tensorboard', default='exp1')
     parser.add_argument('--stop_after', help='Number of batches to stop after', default=None, type=int)
     parser.add_argument('--config', help='Path to config.json', default='config.json')
     parser.add_argument('--window_size', help='Window size to encode setence', type=int, default=1)
-    parser.add_argument('--num_workers', help='How many workers to use for data loading', type=int, default=0)
+    parser.add_argument('--num_workers', help='How many workers to use for '
+                                              'data loading', type=int,
+                        default=0)
     parser.add_argument('--flat_choi', help='Path to flat choi dataset')
 
 

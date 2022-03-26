@@ -1,7 +1,7 @@
 from torch.utils.data import Dataset
 from text_manipulation import word_model
 from text_manipulation import extract_sentence_words
-from pathlib2 import Path
+from pathlib import Path
 import re
 import wiki_utils
 import os

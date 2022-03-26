@@ -1,0 +1,5 @@
+{
+  "cuda" : "False",
+  "word2vecfile" : "/home/rahul/Desktop/shiva/text-segmentation/models/GoogleNews-vectors-negative300.bin",
+  "choidataset" : "/home/rahul/Desktop/shiva/text-segmentation/data/choi"
+}
